@@ -1,0 +1,147 @@
+/* ──────────────────────────────────────────────────────────
+   About Us Page Styles
+   ────────────────────────────────────────────────────────── */
+
+/* Hero / CTA sections */
+.about-hero {
+
+     background: 
+     linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ), 
+
+      url('bg2.jpg') center/cover no-repeat;
+    min-height: 400px;
+    display: flex; 
+    margin-top: 15px;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  /* Section titles */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  /* About sections */
+  .about-section {
+    background-color: #ece9b7;
+  }
+  
+  /* Story image */
+  .story-img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  .story-img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Highlight cards */
+  .highlight-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .highlight-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  .highlight-card .card-img-top {
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Values icons */
+  #ourValues i {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  #ourValues i:hover {
+    transform: scale(1.2);
+  }
+  
+  /* CTA */
+  .about-cta {
+    background:
+     linear-gradient(
+        rgba(61, 62, 65, 0.8),
+        rgba(71, 74, 77, 0.8)
+      ),
+      url('bg3.jpg') center/cover no-repeat;
+  }
+  .about-cta h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .about-cta .btn {
+    border-radius: 25px;
+  }
+  
+  /* Responsive tweaks */
+  /* @media (max-width: 991px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    .highlight-card .card-img-top {
+      height: 140px;
+    }
+  }
+ */
+
+  /* 
+     NAVBAR
+    */
+    .custom-navbar {
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('bg.jpg') center/cover no-repeat;
+      padding: 1rem 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    .navbar-brand {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .navbar-brand .logo-img {
+      width: 45px;
+      transition: transform var(--transition-speed);
+    }
+    .navbar-brand .logo-img:hover {
+      transform: rotate(20deg) scale(1.1);
+    }
+    .nav-link {
+      position: relative;
+      margin: 0 0.5rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: color var(--transition-speed);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+      height: 2px;
+      background: var(--accent-color);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition-speed);
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      transform: scaleX(1);
+    }

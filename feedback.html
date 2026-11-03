@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customer Feedback – Shine Utensils</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Font Awesome for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styling/feedback.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.jpg" alt="Logo" class="logo-img me-2" />
+        Shine Utensils
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="product1.php">Products</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="offerf.html">Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="features.html">features</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact US</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">feedback page</a></li>
+          <li class="nav-item"><a class="nav-link" href="loginpage.html">login page</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Slideshow -->
+  <!-- <section id="feedbackHeader" class="mb-5">
+    <div id="feedbackCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slideshw5.jpg" alt="Slide 1" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/slideshow2.jpg" alt="Slide 2" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/slideshow3.jpg" alt="Slide 3" class="d-block w-100" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section> -->
+
+
+
+  <section class="video-header">
+    <video autoplay loop muted playsinline class="video-bg">
+      <source src="images/vvvv.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+      <h1 class="text-white">We Value Your Feedback</h1>
+    </div>
+  </section>
+
+  <!-- Feedback Form -->
+  <section id="feedbackSection" class="container mb-5">
+    <h2 class="text-center mb-4" style="font-weight:bold; margin-top: 15px;">Give Your Feedback!</h2>
+    <form id="feedbackForm" class="row g-3 justify-content-center">
+      <div class="col-md-4">
+        <label for="fbName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="fbName" required>
+      </div>
+      <div class="col-md-4">
+        <label for="fbEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="fbEmail" required>
+      </div>
+      <div class="col-md-4">
+        <label for="fbRating" class="form-label">Rating</label>
+        <select id="fbRating" class="form-select" required>
+          <option value="">Choose...</option>
+          <option>5 - Excellent</option>
+          <option>4 - Good</option>
+          <option>3 - Average</option>
+          <option>2 - Poor</option>
+          <option>1 - Terrible</option>
+        </select>
+      </div>
+      <div class="col-8">
+        <label for="fbMessage" class="form-label">Message</label>
+        <textarea id="fbMessage" class="form-control" rows="4" required></textarea>
+      </div>
+      <div class="col-4 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
+      </div>
+      <div class="col-12">
+        <div id="thankYouMessage" class="alert alert-success text-center d-none" role="alert">
+          Thank you for your feedback!
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <Reviews List
+  section id="reviewList" class="container mb-5">
+    <h2 class="text-center mb-4">What Customers Are Saying</h2>
+    <div class="row g-4" id="reviews">
+       <!-- Fake Review 1  -->
+      <div class="col-md-4">
+        <div class="card review-card">
+          <div class="card-body">
+            <div class="rating mb-2">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>“I love my new non-stick pan! Cooking is so much easier.”</p>
+            <p class="fw-bold text-end">— Ananya R.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Fake Review 2 -->
+      <div class="col-md-4">
+        <div class="card review-card">
+          <div class="card-body">
+            <div class="rating mb-2">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>“Stainless steel cookware heats evenly and looks great!”</p>
+            <p class="fw-bold text-end">— Rohan S.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Fake Review 3 -->
+      <div class="col-md-4">
+        <div class="card review-card">
+          <div class="card-body">
+            <div class="rating mb-2">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>“Copper handi is gorgeous and cooks beautifully.”</p>
+            <p class="fw-bold text-end">— Priya M.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- Footer -->
+  <footer class="footer hidden">
+    <div class="container text-center">
+      <div class="social-icons mb-3">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>© 2025 Shine Utensils. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap & Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Handle form submission
+    document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('fbName').value;
+      const rating = document.getElementById('fbRating').value.split(' ')[0];
+      const message = document.getElementById('fbMessage').value;
+
+      // Show thank you
+      const thanks = document.getElementById('thankYouMessage');
+      thanks.classList.remove('d-none');
+
+      // Append new review
+      const col = document.createElement('div');
+      col.className = 'col-md-4';
+      col.innerHTML = `
+        <div class="card review-card fade-in">
+          <div class="card-body">
+            <div class="rating mb-2">
+              ${'<i class="fas fa-star"></i>'.repeat(rating) +
+                '<i class="far fa-star"></i>'.repeat(5 - rating)}
+            </div>
+            <p>${message}</p>
+            <p class="fw-bold text-end">— ${name}</p>
+          </div>
+        </div>`;
+      document.getElementById('reviews').prepend(col);
+
+      // Reset form
+      this.reset();
+    });
+
+    // Fade-in on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      document.querySelectorAll('.review-card').forEach(card => observer.observe(card));
+    });
+  </script> 
+</body>
+</html>
