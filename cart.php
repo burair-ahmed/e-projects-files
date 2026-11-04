@@ -109,7 +109,7 @@ Delivery Details
 
 </h4>
 
-<form action="confirm_order.php" method="POST">
+<form action="payment.php" method="POST">
 
 <div class="mb-3">
 
